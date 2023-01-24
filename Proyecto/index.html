@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
+    <title>Artesanias 3D</title>
+  </head>
+  <body>
+    <nav
+      class="nav flex flex-wrap items-center justify-between px-4 bg-gray-800 px-20"
+    >
+      <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+        <span class="font-semibold text-xl tracking-tight text-white"
+          >Artesanias 3D</span
+        >
+      </div>
+      <input class="menu-btn hidden" type="checkbox" id="menu-btn" />
+      <label
+        class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
+        for="menu-btn"
+      >
+        <span class="navicon bg-grey-darkest flex items-center relative"></span>
+      </label>
+      <ul
+        class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto"
+      >
+        <li class="border-t md:border-none">
+          <a
+            href="/"
+            class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold text-white"
+            >Home</a
+          >
+        </li>
+        <li class="border-t md:border-none">
+          <a
+            href="/"
+            class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white"
+            >Nosotros</a
+          >
+        </li>
+        <li class="border-t md:border-none">
+          <a
+            href="/"
+            class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white"
+            >Servicios</a
+          >
+        </li>
+        <li class="border-t md:border-none">
+          <a
+            href="/"
+            class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!--Carruser de imagenes-->
+    <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active relative float-left w-full">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+              class="block w-full"
+              alt=""
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Impresora 3D</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+              class="block w-full"
+              alt="..."
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+              class="block w-full"
+              alt="..."
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <section>
+      <!-- Servicios Destacados -->
+      <div class="container ml-auto mr-auto flex flex-wrap items-start mt-8">
+        <div class="w-full pl-5 lg:pl-2 mb-4 mt-4">
+          <h1 class="text-3xl font-extrabold text-center">Productos :)</h1>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+          <div
+            class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300"
+          >
+            <figure class="mb-2">
+              <img
+                src="assets/img/Axolotl.jpg"
+                alt=""
+                class="h-64 ml-auto mr-auto"
+              />
+            </figure>
+            <div class="rounded-lg p-4 flex flex-col">
+              <div>
+                <h5 class="text-2xl font-bold leading-none text-center">
+                  Axolotl Articulado
+                </h5>
+                <p class="mt-4">
+                  Nulla blandit ac tortor a ullamcorper. Fusce dictum, quam at
+                  ornare finibus, leo erat lacinia urna, vitae interdum est
+                  lacus vel massa. Donec porttitor posuere lacus sit amet
+                  auctor. Fusce fringilla mauris ipsum, nec tempus odio
+                  porttitor a. Cras eu urna eget est egestas pulvinar.
+                </p>
+              </div>
+              <div class="flex items-center mt-4">
+                <a href="#" class="font-bold text-orange-900">Leer más</a>
+                <button
+                  href="javascript:;"
+                  class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-4 transition duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="stroke-current m-auto"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+          <div
+            class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300"
+          >
+            <figure class="mb-2">
+              <img
+                src="assets/img/Grut.jpg"
+                alt=""
+                class="h-64 ml-auto mr-auto"
+              />
+            </figure>
+            <div class="rounded-lg p-4 flex flex-col">
+              <div>
+                <h5 class="text-2xl font-bold leading-none text-center">
+                  Servicio 2
+                </h5>
+                <p class="mt-4">
+                  Nulla blandit ac tortor a ullamcorper. Fusce dictum, quam at
+                  ornare finibus, leo erat lacinia urna, vitae interdum est
+                  lacus vel massa. Donec porttitor posuere lacus sit amet
+                  auctor. Fusce fringilla mauris ipsum, nec tempus odio
+                  porttitor a. Cras eu urna eget est egestas pulvinar.
+                </p>
+              </div>
+              <div class="flex items-center mt-4">
+                <a href="#" class="font-bold text-orange-900">Leer más</a>
+                <button
+                  href="javascript:;"
+                  class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-4 transition duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="stroke-current m-auto"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+          <div
+            class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300"
+          >
+            <figure class="mb-2">
+              <img
+                src="assets/img/Maceta.jpg"
+                alt=""
+                class="h-64 ml-auto mr-auto"
+              />
+            </figure>
+            <div class="rounded-lg p-4 flex flex-col">
+              <div>
+                <h5 class="text-2xl font-bold leading-none text-center">
+                  Servicio 3
+                </h5>
+                <p class="mt-4">
+                  Nulla blandit ac tortor a ullamcorper. Fusce dictum, quam at
+                  ornare finibus, leo erat lacinia urna, vitae interdum est
+                  lacus vel massa. Donec porttitor posuere lacus sit amet
+                  auctor. Fusce fringilla mauris ipsum, nec tempus odio
+                  porttitor a. Cras eu urna eget est egestas pulvinar.
+                </p>
+              </div>
+              <div class="flex items-center mt-4">
+                <a href="#" class="font-bold text-orange-900">Leer más</a>
+                <button
+                  href="javascript:;"
+                  class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-4 transition duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="stroke-current m-auto"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+          <div
+            class="bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300"
+          >
+            <figure class="mb-2">
+              <img
+                src="assets/img/Porta.jpg"
+                alt=""
+                class="h-64 ml-auto mr-auto"
+              />
+            </figure>
+            <div class="rounded-lg p-4 flex flex-col">
+              <div>
+                <h5 class="text-2xl font-bold leading-none text-center">
+                  Servicio 4
+                </h5>
+                <p class="mt-4">
+                  Nulla blandit ac tortor a ullamcorper. Fusce dictum, quam at
+                  ornare finibus, leo erat lacinia urna, vitae interdum est
+                  lacus vel massa. Donec porttitor posuere lacus sit amet
+                  auctor. Fusce fringilla mauris ipsum, nec tempus odio
+                  porttitor a. Cras eu urna eget est egestas pulvinar.
+                </p>
+              </div>
+              <div class="flex items-center mt-4">
+                <a href="#" class="font-bold text-orange-900">Leer más</a>
+                <button
+                  href="javascript:;"
+                  class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-4 transition duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="stroke-current m-auto"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-1 bg-gray-100 py-8 sm:py-12 text-center">
+      <div class="container mx-auto">
+        <p>
+          ©Mi Proyecto
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
